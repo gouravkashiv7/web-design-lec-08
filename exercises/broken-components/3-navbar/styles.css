@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.site-header {
+  position: sticky;
+  z-index: 10;
+  padding: 16px;
+  background: #1B2A41;
+}
+
+.site-header a {
+  margin-right: 16px;
+  color: #FFFFFF;
+}
+
+main {
+  min-height: 200vh;   /* makes the page long enough to scroll */
+  padding: 16px;
+  line-height: 1.6;
+}

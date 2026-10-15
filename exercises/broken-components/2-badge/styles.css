@@ -1,0 +1,20 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.card {
+  max-width: 24rem;
+  margin-top: 48px;
+  padding: 16px 64px 16px 16px;
+  border: 1px solid #E6DFD0;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background: #B45309;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+}

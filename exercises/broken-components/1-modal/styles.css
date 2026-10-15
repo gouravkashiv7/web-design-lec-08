@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.site-header {
+  position: relative;
+  z-index: 2;
+  padding: 16px;
+  background: #1B2A41;
+  color: #FFFFFF;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  padding: 16px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgb(0 0 0 / 0.5);
+}
+
+.modal {
+  position: absolute;
+  top: 96px;
+  left: 16px;
+  right: 16px;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 24px;
+  background: #FFFFFF;
+}

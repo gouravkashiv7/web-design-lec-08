@@ -1,0 +1,55 @@
+/* ============================================================
+   Positioned components
+   Paste this at the BOTTOM of your styles.css.
+   It uses the Lecture 7 tokens: rename them if yours differ.
+   ============================================================ */
+
+
+/* 1. Sticky header: needs class="site-header" on <header>, on every page.
+      It stays in flow, then sticks when it reaches top: 0. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;                       /* stays above cards and badges */
+  background: var(--color-bg);       /* without a background, content shows through */
+  border-bottom: 1px solid var(--color-line);
+}
+
+
+/* 2. Badge: the card becomes the containing block. */
+.card {
+  position: relative;                /* doesn't move the card at all */
+}
+
+.badge {
+  position: absolute;                /* out of flow, placed on .card */
+  top: var(--space-2);
+  right: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-size: var(--font-size-small);
+}
+
+/* TODO: the badge covers the card's heading on narrow screens?
+         Give the card some padding on the right, using a token. */
+
+
+/* 3. Modal: used only on modal-practice.html */
+.overlay {
+  position: fixed;                   /* placed on the viewport */
+  inset: 0;                          /* top, right, bottom, left: 0 */
+  z-index: 100;
+  background: rgb(0 0 0 / 0.5);
+}
+
+.modal {
+  position: absolute;                /* containing block: .overlay */
+  top: var(--space-6);
+  left: var(--space-3);
+  right: var(--space-3);
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: var(--space-4);
+  background: var(--color-bg);
+}
